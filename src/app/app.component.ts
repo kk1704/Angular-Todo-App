@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Todo-App';
-
+  
   getTasks() {
   alert("All Tasks")
   }
