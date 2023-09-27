@@ -9,13 +9,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { TasksComponent } from './tasks/tasks.component'
 import { MatDividerModule } from '@angular/material/divider'
 import { MatListModule } from '@angular/material/list'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { TasksFormComponent } from './tasks/tasks-form/tasks-form.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TasksComponent
+    TasksComponent,
+    TasksFormComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http'
     MatToolbarModule,
     MatDividerModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
