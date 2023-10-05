@@ -9,7 +9,22 @@
             <app-tasks-form></app-tasks-form>
         </div>
         <div class="col md-6">
-            List of tasks
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Tasks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let t of service.Tasks">
+                        <td (click)="populateForm(t)">{{t.name}}</td>
+                        <td (click)="populateForm(t)">{{t.task}}</td>
+                        <i class="far fa-trash-alt fa-lg text secondary" (click)="onDelete(t.id)"></i>                        
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

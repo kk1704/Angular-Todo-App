@@ -1,5 +1,5 @@
 export class Tasks {
-    _id: string=''
+    id: string=''
     name: string=''
     task: string=''
 }
